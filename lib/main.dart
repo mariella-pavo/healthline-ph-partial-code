@@ -17,9 +17,7 @@ class HealthLineApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.black,
       ),
-      // Define the initial route
       initialRoute: '/',
-      // Define named routes for multi-page navigation
       routes: {
         '/': (context) => const LoginScreen(),
         '/dashboard': (context) => const DashboardScreen(),
