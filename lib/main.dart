@@ -40,7 +40,6 @@ class _LoginScreenState extends State<LoginScreen> {
     String password = _passwordController.text;
 
     if (input.isNotEmpty && password.isNotEmpty) {
-      // Replaces the login route so pressing the back button won't return to login
       Navigator.pushReplacementNamed(context, '/dashboard');
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
